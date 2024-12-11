@@ -33,7 +33,7 @@ version_suffix = os.getenv("VERSION_SUFFIX")
 if version_suffix is None:
     version_suffix = f"+git{get_git_commit_id()}"
 
-use_cpp = os.getenv('USE_CPP')
+use_cpp = "0" #os.getenv('USE_CPP')
 
 version_prefix = read_version()
 # Version is version.dev year month date if using nightlies and version if not
